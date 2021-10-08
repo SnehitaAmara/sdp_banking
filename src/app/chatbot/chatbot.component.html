@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+</head>
+<script type="text/javascript">
+    know = {
+
+        "Hello": "&nbsp &nbsp &nbsp &nbsp &nbsp Welcome to KL BANK!",
+        "hello": "&nbsp &nbsp &nbsp &nbsp &nbsp Welcome to KL BANK!",
+        "HELLO": "&nbsp &nbsp &nbsp &nbsp &nbsp Welcome to KL BANK!",
+        "who are you?": "&nbsp &nbsp &nbsp &nbsp &nbsp I am the chatBot deployed for KL Banking services to solve the customer queries.",
+        "what to do when we lost our atm card?": "&nbsp &nbsp &nbsp &nbsp &nbsp You should immediatly visit the bank and make sure that you block the card so that even others know your pin they cant use the card. ",
+        "what are the services provided here?": "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp We allow the user to deposit money,veiw their balance,withdraw money,transfer money.",
+        "how to check my account balance?": "&nbsp &nbsp &nbsp &nbsp &nbsp We provided a option called CHECK BALANCE in the homepage.You can click on that button and enter your respective details and veiw your balance.",
+        "What’s the interest rate in my savings account?": "&nbsp &nbsp &nbsp &nbsp &nbsp You can check the intrest and all that stuff the accounts section.",
+
+
+
+
+    };
+
+    function talk() {
+        var user = document.getElementById("userBox").value;
+        document.getElementById("userBox").value = "";
+        document.getElementById("chatLog").innerHTML += user + "<br>";
+
+        if (user in know) {
+            document.getElementById("chatLog").innerHTML += know[user] + "<br>";
+        } else {
+            document.getElementById("chatLog").innerHTML += "I don't understand... <br>";
+        }
+    }
+</script>
+
+<body class="body">
+
+    <div class="center">
+        <h1>- - ChatBot by KL BANK - - </h1><br>
+    </div>
+    <div class="center"> <img src="https://www.houseofbots.com/images/news/2205/cover.png" width="300" height="200" />
+    </div>
+
+    <h3>--> Please enter your Queries in the below given box.</h3>
+
+    <p id="chatLog"></p>
+
+    <input id="userBox" type="text" ><button onclick="talk()"> Enter </button>
+
+
+</body>
+
+</html>

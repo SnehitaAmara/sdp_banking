@@ -1,0 +1,21 @@
+ul#menu li {
+    display: inline-block;
+    float: none;
+    position: relative;
+    margin-top: 28px; 
+    margin-left: 10px;
+    margin-right: 35px;
+    
+    }
+    
+    ul#menu li a {
+    
+    text-decoration: none;
+    color: #808080;
+    font-family: "Helvetica Neue";
+    font-size: 15px;
+    }
+    .mrgbtm {
+        margin-top: 40px;
+    }
+    
